@@ -91,7 +91,7 @@ export default function Contact() {
 							</div>
 						</div>
 
-						<form className="p-6 border-2  max-sm:w-[52%] max-sm:-ml-[4.5vmax] rounded-[8px] ml-8 w-[41vw]  flex flex-col  justify-center max-sm:mt-5  ">
+						<form className="p-6 border-2  max-sm:w-[52%] max-sm:-ml-[4.5vmax] rounded-[8px] ml-8 w-[41vw]  flex flex-col  justify-center max-sm:mt-9  ">
 							<div className="flex flex-col ">
 								<label htmlFor="name" className="hidden">
 									Full Name

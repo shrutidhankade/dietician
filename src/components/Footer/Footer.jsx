@@ -119,9 +119,9 @@ export default function Footer() {
 				 
 				  <ul className="text-gray-500 font-medium mt-4">
 								<li >
-								<p>123 Fifth Ave, New York,</p>
+								<p>Bhopal</p>
 									
-									<p > NY 12004, United States.
+									<p > 
  							</p>
 							</li>
 								<li className="mt-7">

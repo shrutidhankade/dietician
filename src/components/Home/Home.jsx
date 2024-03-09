@@ -244,13 +244,13 @@ export default function Home() {
 				<div className="left w-1/2 max-sm:w-full max-sm:px-6 max-sm:py-8 flex items-center justify-center ">
 					<div className="w-[30vw] max-sm:w-full h-[92vh] max-sm:h-[100vh] overflow-hidden rounded-lg ">
 						<img
-							className="w-full max-sm:w-full h-full  object-cover"
+							className="w-full max-sm:w-full h-[70vh]  object-cover"
 							src="https://babashivabramhiji.inextets.online/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-06-at-3.18.05-PM.jpeg"
 							alt=""
 						/>
 					</div>
 				</div>
-				<div className="right w-[50vw] max-sm:w-full max-sm:items-center max-sm:px-6 max-sm:py-10 max-sm:leading-7 text-lg  py-24 flex flex-col max-sm:flex-col gap-4 items-start justify-center  px-2 ml-12 max-sm:m-0  ">
+				<div className="right w-[50vw] max-sm:w-full max-sm:items-center max-sm:px-6 max-sm:py-2 max-sm:leading-7 text-lg  py-24 flex flex-col max-sm:flex-col gap-4 items-start justify-center  px-2 ml-12 max-sm:m-0 max-sm:-mt-44  ">
 					<h1 className="text-4xl font-bold ">About Us</h1>
 					<p  className='text-[17px] max-sm:text-center'>
 						Welcome to{' '}
@@ -278,7 +278,7 @@ export default function Home() {
 						Get started on your path to wellness today!
 					</p>
 					<a target="_blank" href="https://wa.me/+917805806867">
-						<button className="px-12 py-1 max-sm:py-3 max-sm:px-10 text-white flex items-center gap-4 rounded-full hover:font-medium cursor-pointer hover:translate-y- hover:transition-all hover:ease-linear hover:duration-150  transition-all ease-linear duration-150 transition-all ease-linear duration-150 translate-y-" style={{backgroundColor: "rgb(3 105 161)"}}>
+						<button className="px-12 py-1 max-sm:py-3 max-sm:px-10 text-white flex items-center gap-4 rounded-full hover:font-medium max-sm:mt-5 cursor-pointer hover:translate-y- hover:transition-all hover:ease-linear hover:duration-150  transition-all ease-linear duration-150 transition-all ease-linear duration-150 translate-y-" style={{backgroundColor: "rgb(3 105 161)"}}>
 
 							<p className="text-3xl max-sm:text-xl">✆</p> Contact Now
 						</button>
@@ -290,7 +290,7 @@ export default function Home() {
 			<div id="services"
   className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white  "
 >
-  <div className="container xl:max-w-6xl mx-auto px-4  max-sm:-mt-12">
+  <div className="container xl:max-w-6xl mx-auto px-4  max-sm:-mt-14">
     {/* Heading start */}
     <header className="text-center mx-auto mb-12 lg:px-20">
       <h2 className=" leading-normal mb-2  text-4xl font-bold text-black font-medium">

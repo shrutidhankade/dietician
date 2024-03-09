@@ -101,7 +101,7 @@ export default function Home() {
 						</a>
 					</div>
 
-					<div className="w-[60%] h-[65vh] max-sm:w-full max-sm:h-[40vh]  max-sm:p-6 max-sm:mb-3 mt-5">
+					<div className="w-[60%] h-[65vh] max-sm:w-full max-sm:h-[37vh]  max-sm:p-6 max-sm:mb-3 mt-5">
 						<div className="w-full h-full max-sm:w-full max-sm:h-full max-sm:ob  rounded-[2vw] object-cover max-w-xl mx-auto relative overflow-hidden	">
 							<div className="w-full h-full rounded-[2vw]  sm:h-80">
 								{images.map((image, index) => (
@@ -241,7 +241,7 @@ export default function Home() {
 
 
 	<div className="h-[100vh] max-sm:h-fit max-sm:flex-col max-sm:items-center w-full flex text-2xl sm:text-5xl py-4  mt-8 sm:px-16 ">
-				<div className="left w-1/2 max-sm:w-full max-sm:px-6 max-sm:py-8 flex items-center justify-center ">
+				<div className="left w-1/2 max-sm:w-full max-sm:-mt-10 max-sm:px-6 max-sm:py-8 flex items-center justify-center ">
 					<div className="w-[30vw] max-sm:w-full h-[92vh] max-sm:h-[100vh] overflow-hidden rounded-lg ">
 						<img
 							className="w-full max-sm:w-full h-[70vh]  object-cover"
@@ -250,7 +250,7 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-				<div className="right w-[50vw] max-sm:w-full max-sm:items-center max-sm:px-6 max-sm:py-2 max-sm:leading-7 text-lg  py-24 flex flex-col max-sm:flex-col gap-4 items-start justify-center  px-2 ml-12 max-sm:m-0 max-sm:-mt-44  ">
+				<div className="right w-[50vw] max-sm:w-full max-sm:items-center max-sm:px-6 max-sm:py-2 max-sm:leading-7 text-lg  py-24 flex flex-col max-sm:flex-col gap-4 items-start justify-center  px-2 ml-12 max-sm:m-0 max-sm:-mt-48  ">
 					<h1 className="text-4xl font-bold ">About Us</h1>
 					<p  className='text-[17px] max-sm:text-center'>
 						Welcome to{' '}

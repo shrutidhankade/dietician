@@ -14,7 +14,7 @@ export default function About() {
 							alt="image"
 						/>
 					</div>
-					<div className='w-[26%] max-sm:top-60  h-[63vh] max-sm:h-[65vh] max-sm:w-[75vw] bg-white absolute left-[30%] top-[35vh] max-sm:-ml-6 '>
+					<div className='w-[26%] max-sm:top-60  h-[63vh] max-sm:h-[52vh] max-sm:w-[75vw] bg-white absolute left-[30%] top-[35vh] max-sm:-ml-6 '>
 						<h1 className='text-[2.7vw] max-sm:text-3xl  font-bold leading-[3.1vw] tracking-wide  text-black ml-10 mt-10'>
 							Be Healthy, <br />
 							Be Happy</h1>

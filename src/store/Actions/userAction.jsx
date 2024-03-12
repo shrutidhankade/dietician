@@ -27,7 +27,7 @@ export const asynccurrentuser = () => async (dispatch, getState) => {
 export const asyncsignup = (user) => async (dispatch, getState) => {
     try {
 
-         await axios.post("/student/signup", user)
+         await axios.post("/signup", user)
          dispatch(asynccurrentuser());
         
 

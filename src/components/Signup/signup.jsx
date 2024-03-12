@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-// import { asyncsignin } from '../../store/Actions/userActions';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+// import { asyncsignup } from '../../store/Actions/userActions'
+import { Link, useNavigate } from 'react-router-dom'
+import { asyncsignup } from '../../store/Actions/userAction'
 
-const Signin = () => {
-const navigate = useNavigate();
-  const dispatch = useDispatch();
+
+const Signup = () => {
   const [formData, setLocalFormData] = useState({});
+  const dispatch = useDispatch();
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,85 +20,93 @@ const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(asyncsignin(formData));
+    dispatch(asyncsignup(formData));
 
     // Accept: "application/json, text/plain, */*"
     // Content - Type; "application/json"
 
 
-    navigate("/Profile")
   };
 
-
   return (
-    <div className='w-full h-[120vh] flex flex-col  items-center'>
-      <div className='w-[25vw] h-[60%]  border-2 border-[#00A5EC] border-opacity-30 mt-10'>
+    <div className='w-full h-[110vh] flex flex-col  items-center  '>
 
-        <div className='w-[80%] p-2 ml-[10%]  mt-4 flex gap-24'>
+      <img className='w-full h-[110vh]' src="https://internshala.com/static/images/registration/student_new/background.png" alt="" />
 
-          <NavLink
-            style={(e) => {
-              return {
-                color: e.isActive ? "skyblue" : "",
-                fontWeight: e.isActive ? "bold" : "",
-                textDecoration: e.isActive ? "underline" : "",
-                fontWeight: e.isActive ? "500" : "",
+      <div className='absolute top-20 ml-16  '>
+        <h1 className='text-5xl -ml-12 font-bold pt-10'>Sign-up and apply for free</h1>
 
-              };
-            }}
-            to="/signin" 
-          >
-         <h1 className='text-[1.3vw]'>  Student</h1>
-          </NavLink>
+        <h3 className='text-2xl pt-4 '>1,50,000+ companies hiring on Internshala</h3>
 
-          <NavLink
-            style={(e) => {
-              return {
-                color: e.isActive ? "skyblue" : "",
-                fontWeight: e.isActive ? "bold" : "",
-                textDecoration: e.isActive ? "underline" : "",
-                fontWeight: e.isActive ? "500" : "",
-              };
-            }}
-            to="/EmployeSignin"> <h1 className='text-[1.3vw]'>Employe/T&P</h1>
-          </NavLink>
-
-        </div>
-         <button className='w-[91%] p-2 ml-[5%]  border-2 mt-5  rounded-[5px]'>Login with Google</button>
-
-        <h1 className='text-center mt-4'> OR</h1>
-
-        <form onSubmit={handleSubmit} className='flex mt-2 flex-col'>
-          <h1 className='ml-5'>Email</h1>
-
-          <input
-
-            type="email"
-            name='email'
-            onChange={handleChange}
-            placeholder='john@example.com'
-            className='w-[91%] p-2 ml-[5%]  border-2   rounded-[5px] ' />
-
-          <h1 className='ml-5'>Password</h1>
-
-          <input type="password" name='password'
-            placeholder='Must be atleast 6 characters'
-            onChange={handleChange}
-            className='w-[91%] p-2 ml-[5%]  border-2  rounded-[5px]  ' /><br />
-
-            <Link className='text-[#00A5EC] ml-[59%] -mt-2 mb-3' to="/forget">
-            Forgot password?
-            </Link>
+        <div className='w-[31vw] h-[65%]  border-2 border-[#00A5EC] border-opacity-30 mt-10'>
 
 
-          <button type='submit' className='bg-[#00A5EC] p-2 w-[91%] ml-[5%] text-white rounded-[5px] ' >Login</button>
 
-          <h1 className='p-5 text-center font-semibold'>New to Internshala? Register<Link className='text-[#00A5EC]' to="/signup"> (<Link to="/signup">Student</Link> / <Link to="/EmployeSignup">Company</Link> ) </Link></h1>
-        </form>
-      </div>
+
+          <div className=' bg-zinc-200 mt-5 p-2 w-[91%] ml-[5%]   '>
+
+
+            <img className='h-[10px] ml-20  ' src="https://banner2.cleanpng.com/20180521/ers/kisspng-google-logo-5b02bbe1d5c6e0.2384399715269058258756.jpg" alt="" />
+
+
+            <h1 className='text-center'>
+              Sign up with Google
+            </h1>
+          </div>
+
+
+
+
+          <form onSubmit={handleSubmit} className='flex flex-col mt-10 p-2'>
+            <h1 className='ml-5'>Email</h1>
+
+            <input
+
+              type="email"
+              name='email'
+              onChange={handleChange}
+              placeholder='john@example.com'
+              className='w-[91%] p-2 ml-[5%]  border-2   rounded-[5px] ' />
+            <br />
+
+
+            <h1 className='ml-5'>Password</h1>
+
+            <input type="password" name='password'
+              placeholder='Must be atleast 6 characters'
+              onChange={handleChange}
+              className='w-[91%] p-2 ml-[5%]  border-2  rounded-[5px]  ' /><br />
+
+            <div className='flex gap-32'>  <h1 className='ml-5'>First Name</h1>
+              <h1 className='ml-5'>Last Name</h1></div>
+
+            <div className='flex gap-2 ml-5'>
+
+              <input type="text"
+                name='firstname'
+                placeholder='John'
+                onChange={handleChange}
+                className=' p-2    border-2   rounded-[5px] ' /><br />
+
+              <input type="text" name='lastname'
+                onChange={handleChange}
+                placeholder='Doe'
+                className=' p-2   border-2  rounded-[5px]   ' />
+            </div>
+
+            <p className='p-5 text-[0.9vw]'>By signing up, you agree to our <span className='text-[#00A5EC]'>Terms and Conditions</span>.</p>
+
+            <button type='submit' className='bg-[#00A5EC] p-2 w-[91%] ml-[5%] text-white rounded-[5px] ' >Sign up</button>
+
+            <h1 className='p-5 text-center font-semibold'>Already registered? <Link className='text-[#00A5EC]' to="/signin">Login</Link></h1>
+          </form>
+
+
+
+        </div></div>
+
     </div>
   )
-
 }
 
-export default Signin
+export default Signup

@@ -294,7 +294,7 @@ const Navbar = () => {
                     })}
                     onClick={handleMenuItemClick}
                     className="hover:border-b-2 hover:border-black hover:border-solid transition-all ease-linear duration-150 hover:transition-all hover:ease-linear hover:duration-150"
-                    to="/Signup"
+                    to="/Dashboard"
                   >
                     Dashboard
                   </NavLink>

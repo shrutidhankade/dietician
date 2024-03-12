@@ -285,6 +285,20 @@ const Navbar = () => {
                   >
                     Call
                   </NavLink>
+
+                  <li className="text-black">
+                  <NavLink
+                    style={(e) => ({
+                      color: e.isActive ? "rgb(3 105 161)" : "",
+                      fontWeight: e.isActive ? "bold" : "",
+                    })}
+                    onClick={handleMenuItemClick}
+                    className="hover:border-b-2 hover:border-black hover:border-solid transition-all ease-linear duration-150 hover:transition-all hover:ease-linear hover:duration-150"
+                    to="/Signup"
+                  >
+                    Dashboard
+                  </NavLink>
+                </li>
                 </li>
               </ul>
             </nav>

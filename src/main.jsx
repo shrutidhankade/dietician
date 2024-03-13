@@ -33,7 +33,7 @@ import Admin from './Dashboard/Admin.jsx';
 /*  -- Second Way to Do Routing -- */
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route path="/" element={<Layout />}>
+		<Route >
 			<Route path="" element={<Home />} />
 			<Route path="about" element={<About />} />
 			<Route path="contact" element={<Contact />} />
@@ -64,3 +64,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
 );
+
+
+
+// path="/" element={<Layout />}

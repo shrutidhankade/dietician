@@ -1,10 +1,12 @@
 import React from 'react';
+import Layout from '../../Layout';
 
 
 export default function Contact() {
 
 	return (
-		<div className="relative flex w-full lg:h-auto  max-sm:mb-44 lg:w-[85vw] lg:ml-[4vw]  md:space-y-0  sm:space-y-0 max-sm:w-[100%] max-sm:h-full items-top justify-center  bg-white sm:items-center sm:pt-0  ">
+		<Layout>
+			<div className="relative flex w-full lg:h-auto  max-sm:mb-44 lg:w-[85vw] lg:ml-[4vw]  md:space-y-0  sm:space-y-0 max-sm:w-[100%] max-sm:h-full items-top justify-center  bg-white sm:items-center sm:pt-0  ">
 			<div className="max-w-6xl mx-auto w-[180vw] lg:w-full max-sm:h-[200vh]  max-sm:mt-0  lg:px-8">
 				<div>
 					<h1 className='text-3xl ml-24 md:leading-[4vw]  max-sm:text-2xl max-sm:w-[100vw] max-sm:pl-20 max-sm:ml-28  text-center pt-10 capitalize font-bold leading-[3vw]'>
@@ -158,6 +160,7 @@ export default function Contact() {
 
 
 		</div>
+		</Layout>
 	);
 }
 

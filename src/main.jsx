@@ -15,7 +15,7 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx';
 import { Provider } from 'react-redux';
 import { store } from './store/store.jsx';
 import Signup from './components/Signup/signup.jsx';
-import Dashboard from './components/User/Dashboard/Dashboard.jsx';
+import Admin from './Dashboard/Admin.jsx';
 
 /*  -- First Way to Do Routing -- */
 // const router = createBrowserRouter([
@@ -38,7 +38,8 @@ const router = createBrowserRouter(
 			<Route path="about" element={<About />} />
 			<Route path="contact" element={<Contact />} />
 			<Route path="signup" element={<Signup />} />
-			<Route path="dashboard" element={<Dashboard />} />
+			<Route path="admin" element={<Admin />} />
+
 
 
 			<Route path="user/:userId" element={<User />} />

@@ -4,13 +4,13 @@ import React from 'react';
 export default function Contact() {
 
 	return (
-		<div className="relative flex w-full  md:space-y-0  sm:space-y-0 max-sm:w-[100%] max-sm:h-full items-top justify-center min-h-[120vh]  bg-white sm:items-center sm:pt-0  ">
-			<div className="max-w-6xl mx-auto w-[180vw] h-[180vh] max-sm:h-[200vh]  max-sm:mt-0  lg:px-8">
+		<div className="relative flex w-full lg:h-auto  max-sm:mb-44 lg:w-[85vw] lg:ml-[4vw]  md:space-y-0  sm:space-y-0 max-sm:w-[100%] max-sm:h-full items-top justify-center  bg-white sm:items-center sm:pt-0  ">
+			<div className="max-w-6xl mx-auto w-[180vw] lg:w-full max-sm:h-[200vh]  max-sm:mt-0  lg:px-8">
 				<div>
-					<h1 className='text-3xl ml-24  max-sm:text-2xl max-sm:w-[100vw] max-sm:pl-20 max-sm:ml-28  text-center pt-10 capitalize font-bold leading-[3vw]'>
+					<h1 className='text-3xl ml-24 md:leading-[4vw]  max-sm:text-2xl max-sm:w-[100vw] max-sm:pl-20 max-sm:ml-28  text-center pt-10 capitalize font-bold leading-[3vw]'>
 						Want to Learn More About Our Plans? <br /> Get in Touch.</h1>
-					<div className="grid mb-14 max-sm:ml-48  w-full mt-14 grid-cols-1 md:grid-cols-2  ">
-						<div className="p-11 ml-1 bg-gray-100 sm:rounded-lg w-[43vw] max-sm:w-full max-sm:-ml-11 ">
+					<div className="grid lg:gap-20 md:gap-0  mb-14 max-sm:ml-48  w-full mt-14 grid-cols-1 md:grid-cols-2  ">
+						<div className="p-11   lg:w-[39vw]   bg-gray-100 sm:rounded-lg  max-sm:w-full max-sm:-ml-11 ">
 							<h1 className="text-4xl ml-10 max-sm:-ml-1 sm:text-4xl text-gray-800 font-extrabold tracking-tight   ">
 								Get in touch:
 							</h1>
@@ -91,7 +91,7 @@ export default function Contact() {
 							</div>
 						</div>
 
-						<form className="p-6 border-2  max-sm:w-[52%] max-sm:-ml-[4.5vmax] rounded-[8px] ml-8 w-[41vw]  flex flex-col  justify-center max-sm:mt-9  ">
+						<form className="p-6 border-2  max-sm:w-[52%] max-sm:-ml-[4.5vmax] rounded-[8px] ml-8 w-[41vw] lg:w-[38vw]  flex flex-col  justify-center max-sm:mt-9  ">
 							<div className="flex flex-col ">
 								<label htmlFor="name" className="hidden">
 									Full Name
@@ -143,9 +143,9 @@ export default function Contact() {
 					</div>
 				</div>
 			
-				<div className='map max-sm:-mt-4'><iframe
+				<div className='map max-sm:-mt-4 lg:w-[50vw]'><iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14654.06221321371!2d79.80552024429957!3d23.333329416231855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b94d1daa2077%3A0xe6463b4949c9b68b!2sKarondi%2C%20Madhya%20Pradesh%20483113!5e0!3m2!1sen!2sin!4v1709634728112!5m2!1sen!2sin"
-					width={1100}
+					width={1200}
 					height={330}
 					style={{ border: 0, borderRadius:"0.7vmax"}}
 					allowFullScreen=""

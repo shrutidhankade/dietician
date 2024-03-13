@@ -9,6 +9,7 @@ const Layout = () => {
 			<div className="w-full overflow-hidden">
 				<Header/>
 				<Outlet />
+				<sidebar/>
 				<Footer />
 			</div>
 		</>

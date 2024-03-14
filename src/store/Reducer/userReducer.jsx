@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    admin: null,
+    user: null,
     isAuth: false,
 }
 
-export const adminSlice = createSlice({
+export const userSlice = createSlice({
     name: 'counter',
     initialState,
     reducers: {
         saveuser: (state, action) => {
-            state.admin = action.payload;
+            state.user = action.payload;
             state.isAuth = true;
         },
-        removeadmin: (state, action) => {
-            state.admin = null;
+        removeuser: (state, action) => {
+            state.user = null;
             state.isAuth = false;
         },
        
@@ -23,6 +23,6 @@ export const adminSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { saveadmin, removeadmin} = adminSlice.actions
+export const { saveuser, removeuser} = userSlice.actions
 
-export default adminSlice.reducer
+export default userSlice.reducer

@@ -1,34 +1,16 @@
 import axios from "../../config/axios";
-import {  removeadmin, saveadmin } from "../Reducer/userReducer";
+import { removeuser, saveuser } from "../Reducer/userReducer";
 
 
-
-
-
-export const asynccurrentuser = () => async (dispatch, getState) => {
-   try {
-    try {
-
-        const { data } = await axios.post("/student",)
-        dispatch(saveadmin(data.student));
-        console.log(data);
-
-    } catch (error) {
-        console.log(error.response);
-    }
-   } catch (error) {
-    
-   }
-
-}
 
 
 
 export const asyncsignup = (user) => async (dispatch, getState) => {
     try {
 
-         await axios.post("/signup", user)
-         dispatch(asynccurrentuser());
+     const {data} =   await axios.post("/admin/signup", user)
+         dispatch(saveuser(data.admin));
+         console.log(data);
         
 
     } catch (error) {
@@ -40,8 +22,9 @@ export const asyncsignup = (user) => async (dispatch, getState) => {
 export const asyncsignin = (user) => async (dispatch, getState) => {
     try {
 
-        await axios.post("/student/signin", user)
-        dispatch(asynccurrentuser());
+        const {data} =   await axios.post("/admin/signin", user)
+        dispatch(saveuser(data.admin));
+        console.log(data);
         
 
     } catch (error) {
@@ -64,33 +47,33 @@ export const asyncremoveuser = () => async (dispatch, getState) => {
 }
 
 
-// export const asyncsendmail = (user) => async (dispatch, getState) => {
-//     try {
+export const asyncsendmail = (user) => async (dispatch, getState) => {
+    try {
 
-//       const {data} = await axios.post("/student/send-mail",user)
-//       dispatch(asynccurrentuser(data.student._id));
-//       console.log(data.student._id);
+      const {data} = await axios.post("/student/send-mail",user)
+      dispatch(asynccurrentuser(data.student._id));
+      console.log(data.student._id);
         
         
 
-//     } catch (error) {
-//         console.log(error.response.data.message);
-//     }
+    } catch (error) {
+        console.log(error.response.data.message);
+    }
 
-// }
+}
 
-// export const asyncverifymail = (user,id) => async (dispatch, getState) => {
-//     try {
+export const asyncverifymail = (user,id) => async (dispatch, getState) => {
+    try {
 
-//       const {data} = await axios.post(`/student/forget-link/${id}`,user)
-//       dispatch(asynccurrentuser(data.student._id));
-//       console.log(data.student._id);
+      const {data} = await axios.post(`/student/forget-link/${id}`,user)
+      dispatch(asynccurrentuser(data.student._id));
+      console.log(data.student._id);
        
         
 
-//     } catch (error) {
-//         console.log(error.response.data.message);
-//     }
+    } catch (error) {
+        console.log(error.response.data.message);
+    }
 
-// }
+}
 
